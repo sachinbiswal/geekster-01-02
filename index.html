@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Assignment JS</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        body{
+            width: 100vw;
+            height: 100vh;
+            /* border: 2px solid red; */
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: space-around;
+        }
+        .box{
+            width: 10%;
+            height: 5%;
+            border: 2px solid black;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            border-radius: 10px;
+        }
+       button{
+	width:10%;
+	height: 5%;
+       }
+    </style>
+</head>
+<body>
+    <div class="box">1st child</div>
+    <div class="box">2nd child</div>
+    <div class="box">3rd child</div>
+    <div class="box">4th child</div>
+    <div class="box">5th child</div>
+    <div class="box">6th child</div>
+    <div class="box">7th child</div>
+    <div class="box">8th child</div>
+    <div class="box">9th child</div>
+    <div class="box">10th child</div>
+    <div class="box">11th child</div>
+    <div class="box">12th child</div>
+    <div class="box">13th child</div>
+    <div class="box">14th child</div>
+    <div class="box">15th child</div>
+    <div class="box">16th child</div>
+    <div class="box">17th child</div>
+    <button onclick="clickme()">clickme</button>
+
+    <script>
+        function clickme() {
+            var all=document.getElementsByClassName("box")
+            for(let i=0;i<all.length;i++){
+                if(i%2==1){
+                    all[i].style.color = 'white'
+                    all[i].style.backgroundColor = '#01ff00'
+                }
+            }
+            all[0].style.color = 'white'
+            all[0].style.backgroundColor = 'blue'
+            all[16].style.color = 'white'
+            all[16].style.backgroundColor = '#db7093'
+            all[8].style.color = 'white'
+            all[8].style.backgroundColor = '#008000'
+        }
+    </script>
+</body>
+</html>
